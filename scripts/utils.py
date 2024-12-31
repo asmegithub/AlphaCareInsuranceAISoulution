@@ -47,7 +47,7 @@ def plot_bivariate_relationships(df, x_col, y_col, group_col):
     plt.show()
     
 def compare_geographical_trends(df, group_col, compare_cols):
-    """Compare trends over geographical regions."""   
+    # """Compare trends over geographical regions."""   
 
     grouped_data = df.groupby(group_col)[compare_cols].mean().reset_index()
 
